@@ -1,0 +1,16 @@
+PODS:
+  - JapaneseHolidays (0.1.0)
+
+DEPENDENCIES:
+  - JapaneseHolidays (from `../`)
+
+EXTERNAL SOURCES:
+  JapaneseHolidays:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JapaneseHolidays: d5d72bbdbc0438d9f41db8dba71f983c0b8bcb07
+
+PODFILE CHECKSUM: c72198f7afa007f3646c68479986d923e5d5e8e1
+
+COCOAPODS: 1.0.1

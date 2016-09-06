@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B09EFB8C89A28A4D6DDBBC2F004BE2 /* JapaneseHolidays-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 758597FE9FC54F9303B320354479F8D2 /* JapaneseHolidays-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		142758D01271C7FA2D337EB9014406F3 /* Pods-JapaneseHolidays_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9774E1AE8E8CC0F267ECA31CC5B8314F /* Pods-JapaneseHolidays_Tests-dummy.m */; };
+		32AEF0326BC818CFDDA3E5B0BCE2111C /* Pods-JapaneseHolidays_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0530518DF57B0C9BB0B37D586BAC38 /* Pods-JapaneseHolidays_Example-dummy.m */; };
+		5A93071F16CB5356072594EA097DCF39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		731F307EDD72BD8266E05FE8E8C9777B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		799D4B9A8D8AB44DB3D3C773340BC16A /* Pods-JapaneseHolidays_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8313352E2FFF44CBA17428503805CA4 /* Pods-JapaneseHolidays_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E7C7099952D818BC3F933C0571C5CC8 /* JapaneseHolidays-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB71035FA7573A13BC08455DB7E7DBB6 /* JapaneseHolidays-dummy.m */; };
+		8FD28DBB49C50BC8A54D3DE82482CE2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F488A3C61D38BAAD0099FF7C /* JapaneseHolidays.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488A3C51D38BAAD0099FF7C /* JapaneseHolidays.swift */; };
+		F488A3D51D38DEF00099FF7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F488A3CB1D38C6900099FF7C /* Localizable.strings */; };
+		FF6281DEE7869754FD2458E1504ACE59 /* Pods-JapaneseHolidays_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7AC3FB75013E432227EB31F11E3974C /* Pods-JapaneseHolidays_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B873221C86BFA9A0C1266C776B7A35E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E9B988BF34FF3DC2C7DFB92A89DC4E8;
+			remoteInfo = JapaneseHolidays;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DD2D8DDE40BE8E314E1836D67A549DD /* Pods-JapaneseHolidays_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JapaneseHolidays_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		142447480E5DC32D67F8D21EDFA6C08E /* JapaneseHolidays-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JapaneseHolidays-prefix.pch"; sourceTree = "<group>"; };
+		187B41F7C5D1A74E1F8F6F04D981EE27 /* Pods-JapaneseHolidays_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapaneseHolidays_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1926C65332D6B6365CED56E29914AC21 /* Pods-JapaneseHolidays_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JapaneseHolidays_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		1B173D9445B0770F0B6B3A2F15D3E84F /* Pods-JapaneseHolidays_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JapaneseHolidays_Tests.modulemap"; sourceTree = "<group>"; };
+		299F2AA2360E1BF2F0F3CB974C04C027 /* Pods-JapaneseHolidays_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapaneseHolidays_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		34FE50074581E34B212397486E210245 /* Pods-JapaneseHolidays_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapaneseHolidays_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3A2EF36852472D419C48430A57887777 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4364E27C1DE2846B8EABE1B5562734C5 /* Pods-JapaneseHolidays_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JapaneseHolidays_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4FCE27C648C21A4FB713253F4D82E315 /* Pods-JapaneseHolidays_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapaneseHolidays_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5B0530518DF57B0C9BB0B37D586BAC38 /* Pods-JapaneseHolidays_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JapaneseHolidays_Example-dummy.m"; sourceTree = "<group>"; };
+		6F69DE7E17327058C42ED201DD448260 /* Pods-JapaneseHolidays_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JapaneseHolidays_Tests-resources.sh"; sourceTree = "<group>"; };
+		756905A1176BE95F46F294D52738B270 /* Pods_JapaneseHolidays_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JapaneseHolidays_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		758597FE9FC54F9303B320354479F8D2 /* JapaneseHolidays-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JapaneseHolidays-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9774E1AE8E8CC0F267ECA31CC5B8314F /* Pods-JapaneseHolidays_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JapaneseHolidays_Tests-dummy.m"; sourceTree = "<group>"; };
+		996E892F04649BECCCB7B89EDDBF9ABB /* Pods-JapaneseHolidays_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JapaneseHolidays_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A08442DA4FDE600908C777BF0C60042E /* JapaneseHolidays.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JapaneseHolidays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0113D509FE10F5C8C67FE0CA841712E /* Pods-JapaneseHolidays_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JapaneseHolidays_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B8313352E2FFF44CBA17428503805CA4 /* Pods-JapaneseHolidays_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JapaneseHolidays_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BB56F2E432B0DEB1B3C8AD5455EBE201 /* Pods-JapaneseHolidays_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JapaneseHolidays_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB71035FA7573A13BC08455DB7E7DBB6 /* JapaneseHolidays-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JapaneseHolidays-dummy.m"; sourceTree = "<group>"; };
+		C14F956581A41F5ECF10582B529A64B9 /* Pods-JapaneseHolidays_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JapaneseHolidays_Example.modulemap"; sourceTree = "<group>"; };
+		CA2FD2375450C3682400FD04D2B59686 /* JapaneseHolidays.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JapaneseHolidays.xcconfig; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D6D9A4E773ECD88B7772B05E86BB5978 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC5B61C6850353EF894684634B28670 /* JapaneseHolidays.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JapaneseHolidays.modulemap; sourceTree = "<group>"; };
+		F3EB34BCC74DC05EF99DED18DA03E9B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F488A3C51D38BAAD0099FF7C /* JapaneseHolidays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseHolidays.swift; sourceTree = "<group>"; };
+		F488A3CA1D38C6900099FF7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F488A3CD1D38C7AD0099FF7C /* ja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F7AC3FB75013E432227EB31F11E3974C /* Pods-JapaneseHolidays_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JapaneseHolidays_Example-umbrella.h"; sourceTree = "<group>"; };
+		F93FF916AF479ADEADA4B3D598486E28 /* Pods-JapaneseHolidays_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JapaneseHolidays_Example-resources.sh"; sourceTree = "<group>"; };
+		FF8A95F705D6411E8A3084A8FCEF61C9 /* Pods_JapaneseHolidays_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JapaneseHolidays_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11FE8E2D26B65339580318C93DBC75B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD28DBB49C50BC8A54D3DE82482CE2D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C23A4D67EBD1C2EF2E446CB89BBEDCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731F307EDD72BD8266E05FE8E8C9777B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9A9C53947082E0E6ACCA2FAD61F183F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A93071F16CB5356072594EA097DCF39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		038E90A642ED959310FA901150F48537 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				061F0D1687E8D4F62F5E04E9166809E8 /* JapaneseHolidays */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		059386A0E671A353DD8BC36516FFB619 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3EB34BCC74DC05EF99DED18DA03E9B2 /* Info.plist */,
+				EBC5B61C6850353EF894684634B28670 /* JapaneseHolidays.modulemap */,
+				CA2FD2375450C3682400FD04D2B59686 /* JapaneseHolidays.xcconfig */,
+				BB71035FA7573A13BC08455DB7E7DBB6 /* JapaneseHolidays-dummy.m */,
+				142447480E5DC32D67F8D21EDFA6C08E /* JapaneseHolidays-prefix.pch */,
+				758597FE9FC54F9303B320354479F8D2 /* JapaneseHolidays-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JapaneseHolidays";
+			sourceTree = "<group>";
+		};
+		061F0D1687E8D4F62F5E04E9166809E8 /* JapaneseHolidays */ = {
+			isa = PBXGroup;
+			children = (
+				C334EFBCB6B141A7521A0682A4188FD5 /* JapaneseHolidays */,
+				059386A0E671A353DD8BC36516FFB619 /* Support Files */,
+			);
+			name = JapaneseHolidays;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		0DF3DF3FD1CD54FFA071037FF41CBFE2 /* Pods-JapaneseHolidays_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3A2EF36852472D419C48430A57887777 /* Info.plist */,
+				C14F956581A41F5ECF10582B529A64B9 /* Pods-JapaneseHolidays_Example.modulemap */,
+				4364E27C1DE2846B8EABE1B5562734C5 /* Pods-JapaneseHolidays_Example-acknowledgements.markdown */,
+				996E892F04649BECCCB7B89EDDBF9ABB /* Pods-JapaneseHolidays_Example-acknowledgements.plist */,
+				5B0530518DF57B0C9BB0B37D586BAC38 /* Pods-JapaneseHolidays_Example-dummy.m */,
+				B0113D509FE10F5C8C67FE0CA841712E /* Pods-JapaneseHolidays_Example-frameworks.sh */,
+				F93FF916AF479ADEADA4B3D598486E28 /* Pods-JapaneseHolidays_Example-resources.sh */,
+				F7AC3FB75013E432227EB31F11E3974C /* Pods-JapaneseHolidays_Example-umbrella.h */,
+				187B41F7C5D1A74E1F8F6F04D981EE27 /* Pods-JapaneseHolidays_Example.debug.xcconfig */,
+				34FE50074581E34B212397486E210245 /* Pods-JapaneseHolidays_Example.release.xcconfig */,
+			);
+			name = "Pods-JapaneseHolidays_Example";
+			path = "Target Support Files/Pods-JapaneseHolidays_Example";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		54AB6D8096869BBB3FAF7F64192166B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A08442DA4FDE600908C777BF0C60042E /* JapaneseHolidays.framework */,
+				FF8A95F705D6411E8A3084A8FCEF61C9 /* Pods_JapaneseHolidays_Example.framework */,
+				756905A1176BE95F46F294D52738B270 /* Pods_JapaneseHolidays_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A2B96C80482849736A2E1F4844E5903 /* Pods-JapaneseHolidays_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D6D9A4E773ECD88B7772B05E86BB5978 /* Info.plist */,
+				1B173D9445B0770F0B6B3A2F15D3E84F /* Pods-JapaneseHolidays_Tests.modulemap */,
+				0DD2D8DDE40BE8E314E1836D67A549DD /* Pods-JapaneseHolidays_Tests-acknowledgements.markdown */,
+				4FCE27C648C21A4FB713253F4D82E315 /* Pods-JapaneseHolidays_Tests-acknowledgements.plist */,
+				9774E1AE8E8CC0F267ECA31CC5B8314F /* Pods-JapaneseHolidays_Tests-dummy.m */,
+				1926C65332D6B6365CED56E29914AC21 /* Pods-JapaneseHolidays_Tests-frameworks.sh */,
+				6F69DE7E17327058C42ED201DD448260 /* Pods-JapaneseHolidays_Tests-resources.sh */,
+				B8313352E2FFF44CBA17428503805CA4 /* Pods-JapaneseHolidays_Tests-umbrella.h */,
+				BB56F2E432B0DEB1B3C8AD5455EBE201 /* Pods-JapaneseHolidays_Tests.debug.xcconfig */,
+				299F2AA2360E1BF2F0F3CB974C04C027 /* Pods-JapaneseHolidays_Tests.release.xcconfig */,
+			);
+			name = "Pods-JapaneseHolidays_Tests";
+			path = "Target Support Files/Pods-JapaneseHolidays_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				038E90A642ED959310FA901150F48537 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				54AB6D8096869BBB3FAF7F64192166B7 /* Products */,
+				AE3D1E129A23DBED92FEF63C0AC6748E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AE3D1E129A23DBED92FEF63C0AC6748E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DF3DF3FD1CD54FFA071037FF41CBFE2 /* Pods-JapaneseHolidays_Example */,
+				7A2B96C80482849736A2E1F4844E5903 /* Pods-JapaneseHolidays_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B93EF116E11C78C41AF9A6FAD1AEB4FF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F488A3C51D38BAAD0099FF7C /* JapaneseHolidays.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C334EFBCB6B141A7521A0682A4188FD5 /* JapaneseHolidays */ = {
+			isa = PBXGroup;
+			children = (
+				F488A3C71D38C63E0099FF7C /* Assets */,
+				B93EF116E11C78C41AF9A6FAD1AEB4FF /* Classes */,
+			);
+			path = JapaneseHolidays;
+			sourceTree = "<group>";
+		};
+		F488A3C71D38C63E0099FF7C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F488A3CB1D38C6900099FF7C /* Localizable.strings */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		872E76CD54538FC3E479EB2DB650901D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B09EFB8C89A28A4D6DDBBC2F004BE2 /* JapaneseHolidays-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC34FD6B1711AD900F625065BD894CDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6281DEE7869754FD2458E1504ACE59 /* Pods-JapaneseHolidays_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E961F5E9B81A6E097E7C4A1A36C99A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799D4B9A8D8AB44DB3D3C773340BC16A /* Pods-JapaneseHolidays_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		16C7B902D68D66F023016C5954414D5C /* Pods-JapaneseHolidays_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55FD9DAF02E3A65C268F9DA4D5F1B358 /* Build configuration list for PBXNativeTarget "Pods-JapaneseHolidays_Example" */;
+			buildPhases = (
+				5A7B0584B0B621C1ADB881DE3A0AF9DE /* Sources */,
+				11FE8E2D26B65339580318C93DBC75B7 /* Frameworks */,
+				DC34FD6B1711AD900F625065BD894CDB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AE07D440BE382219E2DE9B6E16166A5 /* PBXTargetDependency */,
+			);
+			name = "Pods-JapaneseHolidays_Example";
+			productName = "Pods-JapaneseHolidays_Example";
+			productReference = FF8A95F705D6411E8A3084A8FCEF61C9 /* Pods_JapaneseHolidays_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1E9B988BF34FF3DC2C7DFB92A89DC4E8 /* JapaneseHolidays */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C670F05F4DBA9D5199D052F2A6A75BF6 /* Build configuration list for PBXNativeTarget "JapaneseHolidays" */;
+			buildPhases = (
+				E72B491B2BF81AB3A6D3A02AA9015545 /* Sources */,
+				C9A9C53947082E0E6ACCA2FAD61F183F /* Frameworks */,
+				872E76CD54538FC3E479EB2DB650901D /* Headers */,
+				F488A3D21D38DE930099FF7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JapaneseHolidays;
+			productName = JapaneseHolidays;
+			productReference = A08442DA4FDE600908C777BF0C60042E /* JapaneseHolidays.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B531D8BD13632784EEF741E62A83B160 /* Pods-JapaneseHolidays_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB89D0054DD3B242BAE7C0427201833 /* Build configuration list for PBXNativeTarget "Pods-JapaneseHolidays_Tests" */;
+			buildPhases = (
+				B71F0FE0DB37E89ABFD88022CCEA1618 /* Sources */,
+				3C23A4D67EBD1C2EF2E446CB89BBEDCA /* Frameworks */,
+				F4E961F5E9B81A6E097E7C4A1A36C99A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JapaneseHolidays_Tests";
+			productName = "Pods-JapaneseHolidays_Tests";
+			productReference = 756905A1176BE95F46F294D52738B270 /* Pods_JapaneseHolidays_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ja,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 54AB6D8096869BBB3FAF7F64192166B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E9B988BF34FF3DC2C7DFB92A89DC4E8 /* JapaneseHolidays */,
+				16C7B902D68D66F023016C5954414D5C /* Pods-JapaneseHolidays_Example */,
+				B531D8BD13632784EEF741E62A83B160 /* Pods-JapaneseHolidays_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F488A3D21D38DE930099FF7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F488A3D51D38DEF00099FF7C /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A7B0584B0B621C1ADB881DE3A0AF9DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32AEF0326BC818CFDDA3E5B0BCE2111C /* Pods-JapaneseHolidays_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B71F0FE0DB37E89ABFD88022CCEA1618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142758D01271C7FA2D337EB9014406F3 /* Pods-JapaneseHolidays_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E72B491B2BF81AB3A6D3A02AA9015545 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F488A3C61D38BAAD0099FF7C /* JapaneseHolidays.swift in Sources */,
+				7E7C7099952D818BC3F933C0571C5CC8 /* JapaneseHolidays-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AE07D440BE382219E2DE9B6E16166A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JapaneseHolidays;
+			target = 1E9B988BF34FF3DC2C7DFB92A89DC4E8 /* JapaneseHolidays */;
+			targetProxy = 4B873221C86BFA9A0C1266C776B7A35E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F488A3CB1D38C6900099FF7C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F488A3CA1D38C6900099FF7C /* en */,
+				F488A3CD1D38C7AD0099FF7C /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FC5AA9E6812502BFA7D0B17E5741A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB56F2E432B0DEB1B3C8AD5455EBE201 /* Pods-JapaneseHolidays_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JapaneseHolidays_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JapaneseHolidays_Tests/Pods-JapaneseHolidays_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JapaneseHolidays_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44550E807B4169FD8711A5761EC534E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 299F2AA2360E1BF2F0F3CB974C04C027 /* Pods-JapaneseHolidays_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JapaneseHolidays_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JapaneseHolidays_Tests/Pods-JapaneseHolidays_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JapaneseHolidays_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69CB4EF6868ECF497A3A4597BF663281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187B41F7C5D1A74E1F8F6F04D981EE27 /* Pods-JapaneseHolidays_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JapaneseHolidays_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JapaneseHolidays_Example/Pods-JapaneseHolidays_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JapaneseHolidays_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F563AF9A1C6F2221983FA6016A660FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34FE50074581E34B212397486E210245 /* Pods-JapaneseHolidays_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JapaneseHolidays_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JapaneseHolidays_Example/Pods-JapaneseHolidays_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JapaneseHolidays_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6014ED3FA14ECEE35A3FC5373B5B3C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA2FD2375450C3682400FD04D2B59686 /* JapaneseHolidays.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JapaneseHolidays/JapaneseHolidays-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JapaneseHolidays/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JapaneseHolidays/JapaneseHolidays.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
+				PRODUCT_NAME = JapaneseHolidays;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F74569C7A9F35E02C50DD9E57AB43BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA2FD2375450C3682400FD04D2B59686 /* JapaneseHolidays.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JapaneseHolidays/JapaneseHolidays-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JapaneseHolidays/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JapaneseHolidays/JapaneseHolidays.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
+				PRODUCT_NAME = JapaneseHolidays;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55FD9DAF02E3A65C268F9DA4D5F1B358 /* Build configuration list for PBXNativeTarget "Pods-JapaneseHolidays_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CB4EF6868ECF497A3A4597BF663281 /* Debug */,
+				F563AF9A1C6F2221983FA6016A660FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DB89D0054DD3B242BAE7C0427201833 /* Build configuration list for PBXNativeTarget "Pods-JapaneseHolidays_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC5AA9E6812502BFA7D0B17E5741A11 /* Debug */,
+				44550E807B4169FD8711A5761EC534E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C670F05F4DBA9D5199D052F2A6A75BF6 /* Build configuration list for PBXNativeTarget "JapaneseHolidays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74569C7A9F35E02C50DD9E57AB43BAB /* Debug */,
+				F6014ED3FA14ECEE35A3FC5373B5B3C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

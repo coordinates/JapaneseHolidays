@@ -1,0 +1,30 @@
+/*
+  Localizable.strings
+  Pods
+
+  Created by Masayoshi Ukida on 2016/07/15.
+
+*/
+
+"New Year's Day" = "元日";
+"Coming of Age Day" = "成人の日";
+"Foundation Day" = "建国記念の日";
+"Vernal Equinox Day" = "春分の日";
+"Shōwa Day" = "昭和の日";
+"Constitution Memorial Day" = "憲法記念日";
+"Greenery Day" = "みどりの日";
+"Children's Day" = "こどもの日";
+"Marine Day" = "海の日";
+"Mountain Day" = "山の日";
+"Respect-for-the-Aged Day" = "敬老の日";
+"Autumnal Equinox Day" = "秋分の日";
+"Health and Sports Day" = "体育の日";
+"Culture Day" = "文化の日";
+"Labour Thanksgiving Day" = "勤労感謝の日";
+"The Emperor's Birthday" = "天皇誕生日";
+"Marriage of Crown Prince Akihito" = "皇太子・明仁親王の結婚の儀";
+"State Funeral of the Shōwa Emperor" = "昭和天皇の大喪の礼";
+"Official Enthronement Ceremony of Emperor Akihito" = "即位の礼正殿の儀";
+"Marriage of Crown Prince Naruhito" = "皇太子・皇太子徳仁親王の結婚の儀";
+"'Observed'" = "(振替)";
+"People's Day" = "国民の休日";
