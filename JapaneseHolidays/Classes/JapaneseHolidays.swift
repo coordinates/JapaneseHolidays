@@ -9,8 +9,8 @@
 import Foundation
 
 public class JapaneseDummy {
-    public func dummy() {
-        let date = NSDate()
+    open func dummy() {
+        let date = Date()
         date.japaneseHoliday()
         date.isJapaneseHoliday()
     }
@@ -18,31 +18,31 @@ public class JapaneseDummy {
 
 extension String {
     var localized: String {
-        let bundle = NSBundle(forClass: JapaneseDummy.self)
+        let bundle = Bundle(for: JapaneseDummy.self)
         return NSLocalizedString(self, tableName: nil, bundle: bundle, value: "", comment: "")
     }
 }
 
 public struct JapaneseHoliday: CustomStringConvertible {
-    enum Weekday: Int {
-        case Sunday = 1
-        case Monday = 2
-        case Tuesday = 3
-        case Wednesday = 4
-        case Thursday = 5
-        case Friday = 6
-        case Saturday = 7
+    private enum Weekday: Int {
+        case sunday = 1
+        case monday = 2
+        case tuesday = 3
+        case wednesday = 4
+        case thursday = 5
+        case friday = 6
+        case saturday = 7
     }
 
-    private(set) public var title: String
-    private(set) public var isObserved: Bool
-    private(set) public var year: Int
-    private(set) public var month: Int
-    var day: Int
+    fileprivate(set) public var title: String
+    fileprivate(set) public var isObserved: Bool
+    fileprivate(set) public var year: Int
+    fileprivate(set) public var month: Int
+    fileprivate(set) public var day: Int
     
-    private var date: NSDate
+    fileprivate var date: Date
 
-    private static let absoluteHolidays:[(title:String, fromYear:Int, toYear:Int, month:Int, day:Int)] = [
+    fileprivate static let absoluteHolidays:[(title:String, fromYear:Int, toYear:Int, month:Int, day:Int)] = [
         ("New Year's Day".localized, 1948, NSIntegerMax, 1, 1),
         ("Coming of Age Day".localized, 1948, 1999, 1, 15),
         ("Foundation Day".localized, 1967, NSIntegerMax, 2, 11),
@@ -61,48 +61,48 @@ public struct JapaneseHoliday: CustomStringConvertible {
         ("The Emperor's Birthday".localized, 1989, NSIntegerMax, 12, 23),
         ]
     
-    private static let mondayHolidays:[(title:String, fromYear:Int, toYear:Int, month:Int, weekOfMonth:Int)] = [
+    fileprivate static let mondayHolidays:[(title:String, fromYear:Int, toYear:Int, month:Int, weekOfMonth:Int)] = [
         ("Coming of Age Day".localized, 2000, NSIntegerMax, 1, 2),
         ("Marine Day".localized, 2003, NSIntegerMax, 7, 3),
         ("Respect-for-the-Aged Day".localized, 2003, NSIntegerMax, 9, 3),
         ("Health and Sports Day".localized, 2000, NSIntegerMax, 10, 2),
         ]
     
-    private static let equinoxHolidays:[(title:String, fromYear:Int, toYear:Int, month:Int, basePoint:Double, movePoint:Double, moveYear:Int, resetYear:Int)] = [
+    fileprivate static let equinoxHolidays:[(title:String, fromYear:Int, toYear:Int, month:Int, basePoint:Double, movePoint:Double, moveYear:Int, resetYear:Int)] = [
         ("Vernal Equinox Day".localized, 1900, 1979, 3, 20.8357, 0.242194, 1980, 1983),
         ("Vernal Equinox Day".localized, 1980, 2099, 3, 20.8431, 0.242194, 1980, 1980),
         ("Autumnal Equinox Day".localized, 1900, 1979, 9, 23.2588, 0.242194, 1980, 1983),
         ("Autumnal Equinox Day".localized, 1980, 2099, 9, 23.2488, 0.242194, 1980, 1980),
     ]
     
-    private static let imperialHolidays:[(title:String, year:Int, month:Int, day:Int)] = [
+    fileprivate static let imperialHolidays:[(title:String, year:Int, month:Int, day:Int)] = [
         ("Marriage of Crown Prince Akihito".localized, 1959, 4, 10),
         ("State Funeral of the Shōwa Emperor".localized, 1989, 2, 24),
         ("Official Enthronement Ceremony of Emperor Akihito".localized, 1990, 11, 12),
         ("Marriage of Crown Prince Naruhito".localized, 1993, 6, 9),
         ]
     
-    private static var calendar: NSCalendar? = {
-        let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
-        calendar?.locale = NSLocale(localeIdentifier: "ja_JP")
-        if let timezone = NSTimeZone(name: "Asia/Tokyo") {
-            calendar?.timeZone = timezone
+    fileprivate static var calendar: Calendar? = {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.locale = Locale(identifier: "ja_JP")
+        if let timezone = TimeZone(identifier: "Asia/Tokyo") {
+            calendar.timeZone = timezone
         }
         
         return calendar
     }()
     
-    private static var bundle: NSBundle = {
-        let bundle = NSBundle(forClass: JapaneseDummy.self)
+    fileprivate static var bundle: Bundle = {
+        let bundle = Bundle(for: JapaneseDummy.self)
         return bundle
     }()
     
     public var description: String {
-        let dateString = String(format: "%04d-%02d-%02d", self.year, self.month, self.day)
-        return String(dateString + ": " + self.title)
+        let dateString = String(format: "%04d-%02d-%02d", year, month, day)
+        return String(dateString + ": " + title)
     }
     
-    init?(title: String, date: NSDate, isObserved: Bool? = false) {
+    init?(title: String, date: Date, isObserved: Bool? = false) {
         self.title = title
         self.date = date
         self.isObserved = isObserved!
@@ -111,12 +111,12 @@ public struct JapaneseHoliday: CustomStringConvertible {
             return nil
         }
         
-        self.year = calendar.component(.Year, fromDate: date)
-        self.month = calendar.component(.Month, fromDate: date)
-        self.day = calendar.component(.Day, fromDate: date)
+        year = calendar.component(.year, from: date)
+        month = calendar.component(.month, from: date)
+        day = calendar.component(.day, from: date)
     }
     
-    public static func holidays(year year: Int) -> [JapaneseHoliday] {
+    public static func holidays(year: Int) -> [JapaneseHoliday] {
         var holidays: [JapaneseHoliday] = []
         guard let calendar = JapaneseHoliday.calendar else {
             return holidays
@@ -142,8 +142,8 @@ public struct JapaneseHoliday: CustomStringConvertible {
             }
 
             // 祝日は日曜か？
-            let weekday = calendar.component(.Weekday, fromDate: item.date)
-            guard weekday == Weekday.Sunday.rawValue else {
+            let weekday = calendar.component(.weekday, from: item.date)
+            guard weekday == Weekday.sunday.rawValue else {
                 continue
             }
             
@@ -151,9 +151,9 @@ public struct JapaneseHoliday: CustomStringConvertible {
             var nextDate = item.date
             var nextWeekday = weekday
             repeat {
-                nextDate = nextDate.dateByAddingTimeInterval(86400)
-                nextWeekday = calendar.component(.Weekday, fromDate: nextDate)
-            } while (nextWeekday == Weekday.Sunday.rawValue || 0 < holidays.filter { $0.date.compare(nextDate) == .OrderedSame }.count)
+                nextDate = nextDate.addingTimeInterval(86400)
+                nextWeekday = calendar.component(.weekday, from: nextDate)
+            } while (nextWeekday == Weekday.sunday.rawValue || 0 < holidays.filter { $0.date.compare(nextDate) == .orderedSame }.count)
             
             if let holiday = JapaneseHoliday(title: item.title  + " " + "'Observed'".localized,
                                            date: nextDate,
@@ -168,19 +168,19 @@ public struct JapaneseHoliday: CustomStringConvertible {
         if year > 1985 {
             for item in holidays {
                 // 明後日の祝日を確認
-                let afterDate = item.date.dateByAddingTimeInterval(86400 * 2)
-                guard 0 < (holidays.filter { $0.date.compare(afterDate) == .OrderedSame }.count) else {
+                let afterDate = item.date.addingTimeInterval(86400 * 2)
+                guard 0 < (holidays.filter { $0.date.compare(afterDate) == .orderedSame }.count) else {
                     continue
                 }
                 
                 // 明日が平日かを確認
-                let tomorrowDate = item.date.dateByAddingTimeInterval(86400)
-                let tomorrowWeekday = calendar.component(.Weekday, fromDate: tomorrowDate)
-                guard tomorrowWeekday != Weekday.Sunday.rawValue else {
+                let tomorrowDate = item.date.addingTimeInterval(86400)
+                let tomorrowWeekday = calendar.component(.weekday, from: tomorrowDate)
+                guard tomorrowWeekday != Weekday.sunday.rawValue else {
                     continue
                 }
                 // 明日が祝日ではないことを確認
-                guard 0 == (holidays.filter { $0.date.compare(tomorrowDate) == .OrderedSame }.count) else {
+                guard 0 == (holidays.filter { $0.date.compare(tomorrowDate) == .orderedSame }.count) else {
                     continue
                 }
                 
@@ -194,10 +194,10 @@ public struct JapaneseHoliday: CustomStringConvertible {
         }
         
         // 並び替え
-        holidays.sortInPlace({
+        holidays.sort(by: {
             (a, b) in
             
-            if a.date.compare(b.date) == .OrderedAscending {
+            if a.date.compare(b.date) == .orderedAscending {
                 return true
             }
             
@@ -210,7 +210,7 @@ public struct JapaneseHoliday: CustomStringConvertible {
         return holidays
     }
     
-    private static func holidays(year year: Int, month: Int) -> [JapaneseHoliday] {
+    fileprivate static func holidays(year: Int, month: Int) -> [JapaneseHoliday] {
         var holidays: [JapaneseHoliday] = []
         
         guard let calendar = JapaneseHoliday.calendar else {
@@ -236,13 +236,13 @@ public struct JapaneseHoliday: CustomStringConvertible {
                 continue
             }
             
-            let components = NSDateComponents()
+            var components = DateComponents()
             components.era = 1
             components.year = year
             components.month = month
             components.day = item.day
             
-            guard let date = calendar.dateFromComponents(components) else {
+            guard let date = calendar.date(from: components) else {
                 continue
             }
             
@@ -261,14 +261,14 @@ public struct JapaneseHoliday: CustomStringConvertible {
                 continue
             }
             
-            let components = NSDateComponents()
+            var components = DateComponents()
             components.era = 1
             components.year = year
             components.month = month
             components.weekOfMonth = item.weekOfMonth + 1
-            components.weekday = Weekday.Monday.rawValue
+            components.weekday = Weekday.monday.rawValue
             
-            guard let date = calendar.dateFromComponents(components) else {
+            guard let date = calendar.date(from: components) else {
                 continue
             }
             
@@ -288,13 +288,13 @@ public struct JapaneseHoliday: CustomStringConvertible {
             }
             
             let day = Int(item.basePoint + item.movePoint * Double(year - item.moveYear)) - Int((year - item.resetYear) / 4)
-            let components = NSDateComponents()
+            var components = DateComponents()
             components.era = 1
             components.year = year
             components.month = month
             components.day = day
             
-            guard let date = calendar.dateFromComponents(components) else {
+            guard let date = calendar.date(from: components) else {
                 continue
             }
 
@@ -310,13 +310,13 @@ public struct JapaneseHoliday: CustomStringConvertible {
                 continue
             }
             
-            let components = NSDateComponents()
+            var components = DateComponents()
             components.era = 1
             components.year = year
             components.month = month
             components.day = item.day
             
-            guard let date = calendar.dateFromComponents(components) else {
+            guard let date = calendar.date(from: components) else {
                 continue
             }
             
@@ -330,7 +330,7 @@ public struct JapaneseHoliday: CustomStringConvertible {
     }
 }
 
-public extension NSDate {
+public extension Date {
     
     public func isJapaneseHoliday() -> Bool {
         guard let _ = self.japaneseHoliday() else {
@@ -345,9 +345,9 @@ public extension NSDate {
             return nil
         }
         
-        let year = calendar.component(.Year, fromDate: self)
+        let year = calendar.component(.year, from: self)
         let holidays = JapaneseHoliday.holidays(year: year)
         
-        return holidays.filter { calendar.isDate($0.date, inSameDayAsDate:self) }.first
+        return holidays.filter { calendar.isDate($0.date, inSameDayAs:self) }.first
     }
 }

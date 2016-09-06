@@ -36,21 +36,19 @@ class Tests: XCTestCase {
         ]
 
         for item in testcases {
-            let isHoliday = self.isHoliday(item.year, month: item.month, day: item.day)
+            let isHoliday = self.isHoliday(year: item.year, month: item.month, day: item.day)
             XCTAssert(isHoliday == item.isHoliday, "failed")
         }
     }
     
     func isHoliday(year: Int, month: Int, day: Int) -> Bool {
-        guard let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian) else {
-            return false
-        }
-        let components = NSDateComponents()
+        let calendar = Calendar(identifier: .gregorian)
+        var components = DateComponents()
         components.era = 1
         components.year = year
         components.month = month
         components.day = day
-        guard calendar.dateFromComponents(components) != nil else {
+        guard calendar.date(from: components) != nil else {
             return false
         }
         return true
